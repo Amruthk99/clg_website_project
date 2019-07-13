@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'subpages.apps.SubpagesConfig',
     'homepage.apps.HomepageConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -79,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'college_db',
         'USER': 'postgres',
-        'PASSWORD': '0',    
+        'PASSWORD': '0',
         'HOST': 'localhost',
         'PORT': '5432',
     }

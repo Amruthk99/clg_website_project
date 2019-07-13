@@ -28,11 +28,11 @@
 <style>
 /* styles for this sample only */
 *{ margin: 0; padding: 0; }
-body { height: auto; font-size: 16px; font-family: 'Exo 2', sans-serif; 
+body { height: auto; font-size: 16px; font-family: 'Exo 2', sans-serif;
        background: #efefef; color: #555; }
 
 .header {
-    text-align: center;margin:0 auto; 
+    text-align: center;margin:0 auto;
 
 }
 .header a { padding: 20px; display: block; font-size: 48px; text-decoration: none; color: #555; }
@@ -71,7 +71,7 @@ body{
     .stellarnav ul li a{
         z-index:250000;
     }
-    
+
 /* styles for this sample only */
 </style>
 
@@ -210,7 +210,7 @@ body{
                         </li>
                     </ul>
                 </li>
-               
+
                 <li><a href="">Item 3</a></li>
                 <li><a href="">Item 4</a></li>
                 <li><a href="">Item 5</a></li>
@@ -309,6 +309,8 @@ body{
                         <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
+
+
                         <div class="carousel-item active">
                             <img src="pictures/clg_pic.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
@@ -316,20 +318,24 @@ body{
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="pictures/clg_pic.jpg"" class="d-block w-100" alt="...">
+
+												<!--loop-->
+												{% for job in jobs.all %}
+
+
+
+                        <div class="carousel-item ">
+                            <img src="{{job.image.url}}" class="d-block w-100" alt="...">
+														<h5>Second slide label</h5>
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="pictures/clg_pic.jpg"" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </div>
-                        </div>
+												{%endfor%}
+												<!--loop ends-->
+
+
+
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -349,9 +355,9 @@ body{
 
 
             <div class="container">
-              
 
-         
+
+
                 <br />
 
 
@@ -411,7 +417,7 @@ body{
                     </div>
                 </div>
 
-                <hr />  
+                <hr />
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
@@ -465,7 +471,7 @@ body{
                         </div>
                     </div>
                 </div>
-            </div>  
+            </div>
 
 
 
@@ -499,7 +505,7 @@ body{
 
         </div>
 
-   
+
 
 
 
