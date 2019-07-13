@@ -1,0 +1,7 @@
+1. Careers in nav bar
+2. Admin password change rights- either QR code.
+3. After logging in- 
+	Mess Registration form
+	Event Registration
+	Student information system - attendance, marks, technical/cultural activtiies
+		
