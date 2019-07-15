@@ -1,8 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from .models import Job
+from .models import Image
 # Create your views here.
 
 def home(request):
-    jobs = Job.objects
+    jobs = Image.objects
     return render(request,'index.html',{'jobs':jobs})
