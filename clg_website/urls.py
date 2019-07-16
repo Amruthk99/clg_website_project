@@ -19,8 +19,10 @@ from . import views
 from django.conf import settings
 from django.conf.urls.static import static
 import homepage.views
+import subpages.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',homepage.views.home,name='home')
+    path('',homepage.views.home,name='home'),
+    path('aboutIIITT/',subpages.views.aboutIIITT,name='aboutIIITT')
 ]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
