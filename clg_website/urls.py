@@ -25,4 +25,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',homepage.views.home,name='home'),
     path('aboutIIITT/',subpages.views.aboutIIITT,name='aboutIIITT')
+    
+
 ]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
