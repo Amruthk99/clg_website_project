@@ -115,7 +115,7 @@
 
     				<div class="head-banner hidden-sm hidden-xs hidden-md">
 
-    					<a href="#">	<img src="{% static 'logo-iiit.png' %}" class="img-fluid" alt="IIITT"></a>
+    					<a href=" {% url 'home' %} ">	<img src="{% static 'logo-iiit.png' %}" class="img-fluid" alt="IIITT"></a>
 
 
     				</div>
@@ -127,7 +127,7 @@
     	</div>
     	<div class="stellarnav" style="  z-index:99;">
     		<ul style="z-index:2;">
-    			<li><a href="">Home</a></li>
+    			<li><a href="{% url 'home' %}">Home</a></li>
     			<li>
     				<a href="">The Institute</a>
     				<ul>
