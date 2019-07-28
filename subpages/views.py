@@ -7,7 +7,7 @@ from .models import Photo
 def aboutIIITT(request):
     content = Content_with_1_image.objects.all
     args = {'content':content,}
-    return render(request,'profile.html',args)
+    return render(request,'about.html',args)
 
 def detail(request,page_id):
     content = Content_with_1_image.objects.get(title = page_id)

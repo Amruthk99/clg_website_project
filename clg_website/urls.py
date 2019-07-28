@@ -26,6 +26,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',homepage.views.home,name='home'),
     path('aboutIIITT/',subpages.views.aboutIIITT,name='aboutIIITT'),
+    path('profile/',views.profile,name='profile'),
     path('gallery/',subpages.views.gallery,name='gallery'),
     url(r'^(?P<page_id>[\w-]+)/$',subpages.views.detail),
 

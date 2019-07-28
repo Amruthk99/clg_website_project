@@ -31,7 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'Profile.apps.ProfileConfig',
+    'faculty.apps.FacultyConfig',
+    'student.apps.StudentConfig',
     'subpages.apps.SubpagesConfig',
     'homepage.apps.HomepageConfig',
     'django.contrib.admin',
