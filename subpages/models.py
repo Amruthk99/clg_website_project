@@ -31,27 +31,3 @@ class Photo(models.Model):
     title = models.CharField(max_length=64, blank=True, null=True)
     def __str__(self):
         return self.title
-
-class  ECE_Faculty(models.Model):
-    title = models.CharField(max_length=64, blank=True, null=True)
-    name = models.CharField(max_length=64, blank=True, null=True)
-    designation = models.CharField(max_length=64, blank=True, null=True)
-    email = models.CharField(max_length=64, blank=True, null=True)
-    number = models.CharField(max_length=64, blank=True, null=True)
-    education = models.TextField(blank=True, null=True)
-    areas_of_interest = models.TextField(blank=True, null=True)
-    image = models.ImageField(upload_to='images/')
-    def __str__(self):
-        return self.title
-
-class  CSE_Faculty(models.Model):
-    title = models.CharField(max_length=64, blank=True, null=True)
-    name = models.CharField(max_length=64, blank=True, null=True)
-    designation = models.CharField(max_length=64, blank=True, null=True)
-    email = models.CharField(max_length=64, blank=True, null=True)
-    number = models.CharField(max_length=64, blank=True, null=True)
-    education = models.TextField(blank=True, null=True)
-    areas_of_interest = models.TextField(blank=True, null=True)
-    image = models.ImageField(upload_to='images/')
-    def __str__(self):
-        return self.title

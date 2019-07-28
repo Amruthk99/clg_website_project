@@ -27,8 +27,6 @@ urlpatterns = [
     path('',homepage.views.home,name='home'),
     path('aboutIIITT/',subpages.views.aboutIIITT,name='aboutIIITT'),
     path('gallery/',subpages.views.gallery,name='gallery'),
-    path('faculty/',subpages.views.faculty,name='faculty'),
-    path('faculty/(?P<name>[\w-]+)/$',subpages.views.faculty,name='faculty'),
     url(r'^(?P<page_id>[\w-]+)/$',subpages.views.detail),
 
 
