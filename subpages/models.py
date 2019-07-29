@@ -8,6 +8,9 @@ class  Content_with_1_image(models.Model):
     title = models.CharField(max_length=64, blank=True, null=True)
     def __str__(self):
         return self.title
+    class Meta:
+        verbose_name_plural = 'Content with 1 Image'
+
 
 class Content_with_2_image(models.Model):
     title = models.CharField(max_length=64, blank=True, null=True)
@@ -16,6 +19,9 @@ class Content_with_2_image(models.Model):
     image2 = models.ImageField(upload_to='images/')
     def __str__(self):
         return self.title
+    class Meta:
+        verbose_name_plural = 'Content with 2 Image'
+
 
 class Content_with_3_image(models.Model):
     title = models.CharField(max_length=64, blank=True, null=True)
@@ -25,6 +31,9 @@ class Content_with_3_image(models.Model):
     image3 = models.ImageField(upload_to='images/')
     def __str__(self):
         return self.title
+    class Meta:
+        verbose_name_plural = 'Content with 3 Image'
+
 
 class Photo(models.Model):
     image1 = models.ImageField(upload_to='images/')

@@ -9,6 +9,9 @@ class  CSE(models.Model):
     title = models.CharField(max_length=64, blank=True, null=True)
     def __str__(self):
         return self.roll
+    class Meta:
+        verbose_name_plural = 'CSE'
+
 
 
 class  ECE(models.Model):
@@ -19,3 +22,5 @@ class  ECE(models.Model):
     title = models.CharField(max_length=64, blank=True, null=True)
     def __str__(self):
         return self.roll
+    class Meta:
+        verbose_name_plural = 'ECE'
