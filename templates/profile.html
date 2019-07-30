@@ -17,15 +17,15 @@
 
 					<div class="text-center" style="margin-top: 0;">
 						<div class="text-center"style=" background-color: white;float:left;">
-							<img id="image" name="image" style="height: 200px; width: 200px;margin:0px auto; border-radius: 5px;object-fit: cover;" src="{% static 'iiitt-logo.png' %}">
+							<img id="image" name="image" style="height: 200px; width: 200px;margin:0px auto; border-radius: 5px;object-fit: cover;" src="{{content.image.url}}">
 						</div>
 						<div class="w3-rest" style="padding-left: 30px; min-width: 300px">
-							<p style="margin: 30px 0 0 0; font-size: xx-large;" class="header">Prof. Banshidhar Majhi</p>
+							<p style="margin: 30px 0 0 0; font-size: xx-large;" class="header">{{content.name}}</p>
 
-							<p class="subheader" style="margin: 0; color: #3275AA;">Professor</p>
+							<p class="subheader" style="margin: 0; color: #3275AA;">Faculty</p>
 							<p class="paragraph" style="margin: 0; ">
 								<b style="color: #3275AA; font-weight: 600">E-mail: </b>
-								directoroffice@iiitdm.ac.in | </p>
+								{{content.email}} | </p>
 								<p class="paragraph" style="margin: 0; ">
 								<b style="color: #3275AA; font-weight: 600">Ph: </b>
 								+91 44 2747 6302 | </p>
@@ -36,7 +36,7 @@
 				</div>
 
 				<br/>
-<br/>	<br/>	
+<br/>	<br/>
 
 
 
@@ -47,12 +47,9 @@
 							<div class="w3-col"style="width: 700px; height: 30px;">
 								<p style="font-size: 25px; height: 30px; margin: 0 10px;" class="subheader">Specialization</p>
 							</div></div>
-								<div style="width: 100%; background-color: #214B8C; height: 2px; margin-top: 15px"></div><ol style="list-style: circle; margin: 10px 5px 5px 15px;" ><li><p class="paragraph" style="margin:0">Image Processing</p></li></ol></div>
+								<div style="width: 100%; background-color: #214B8C; height: 2px; margin-top: 15px"></div><ol style="list-style: circle; margin: 10px 5px 5px 15px;" ><li><p class="paragraph" style="margin:0">{{content.areas_of_interest}}</p></li></ol></div>
 
-					<div id="content" class="frame" style="width: 100%; border-radius: 5px; background: #edeaea; border-color: #edeaea; border-width: 5px; border-style: solid; margin-top: 40px"><div class="w3-row" style="height: 30px;"><div class="w3-col"style="width: 700px; height: 30px;"><p style="font-size: 25px; height: 30px; margin: 0 10px;" class="subheader">Research Interests</p></div></div><div style="width: 100%; background-color: #214B8C; height: 2px; margin-top: 15px"></div><ol style="list-style: circle; margin: 10px 5px 5px 15px;" ><li><p class="paragraph" style="margin:0">Image Processing, Data Compression, Cryptography and Security, Parallel Computing, Soft Computing</p></li></ol></div>
-
-					<div id="content" class="frame" style="width: 100%; border-radius: 5px; background: #edeaea; border-color: #edeaea; border-width: 5px; border-style: solid; margin-top: 40px"><div class="w3-row" style="height: 30px;"><div class="w3-col"style="width: 700px; height: 30px;"><p style="font-size: 25px; height: 30px; margin: 0 10px;" class="subheader">Honours + Awards + Recognitions</p></div></div><div style="width: 100%; background-color: #214B8C; height: 2px; margin-top: 15px"></div><ol style="list-style: circle; margin: 10px 5px 5px 15px;" ><li><p class="paragraph" style="margin:0">Gold Medal for Best Engineering Paper from IETE, 2001, Gold Medal from Orissa Engineering. Congress,</p></li></ol></div>
-
+				
 
 					<div id="content" class="frame" style="width: 100%; border-radius: 5px; background: #edeaea; border-color: #edeaea; border-width: 5px; border-style: solid; margin-top: 40px">
 

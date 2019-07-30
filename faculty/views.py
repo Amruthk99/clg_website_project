@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render,get_object_or_404
 from .models import CSE, ECE
 
 # Create your views here.
@@ -11,6 +11,7 @@ def home(request):
     return render(request,'faculty.html',args)
 
 
-def detail(request,page_id):
-    args = {'content':'content',}
-    return render(request,'subpage.html',args)
+def detailie(request,id):
+
+    content = ECE.objects.get(title = id)
+    return render(request,'profile.html',{'content':content})

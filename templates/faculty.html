@@ -20,7 +20,7 @@
 					 	          </tr>
 
 										<tr>
-											<td><a href=''><h3>{{person.name}}</h3></a></td>
+											<td><a href="{% url 'detailie' person.title %}"><h3>{{person.name}}</h3></a></td>
 										</tr>
 
 										<tr>	<p><td><b> {{person.email}}</b></td></p>
@@ -53,7 +53,7 @@
 															 	          </tr>
 
 																				<tr>
-																					<td><a href=''><h3>{{person.name}}</h3></a></td>
+																					<td><a href="{% url 'detailie' person.title %}"><h3>{{person.name}}</h3></a></td>
 																				</tr>
 
 																				<tr>	<p><td><b> {{person.email}}</b></td></p>

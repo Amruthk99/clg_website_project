@@ -23,7 +23,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('',views.home,name='faculty'),
-    url(r'^(?P<page_id>[\w-]+)/$',views.detail),
+    url(r'^(?P<id>[\w-]+)/$',views.detailie,name = 'detailie'),
 
 
 
