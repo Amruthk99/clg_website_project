@@ -4,96 +4,90 @@
 
 	{% block content %}
 		<!---home page-->
-
-		<div class="container marketing"style="background-color:#edeaea;width:70%;">
+		<br/>
+<div class="container1"style="background-color:#edeaea;">
+		<div class="container"style="background-color:#edeaea;width:70%;">
 	<br/>
 		        <!-- Three columns of text below the carousel -->
 						<h2 class="text-center">DEPARTMENT OF CSE</h2>
-					<table style="background-color:white;margin:5px;border-radius: 25px;
-						border: 2px solid lightgrey;" border=0  align=center cellspacing=0 cellpadding=2>
+
+						{% for person in cse.all %}
+					<table style="background-color:white;margin:10px;border-radius: 25px;width:98%;">
 					 						<tr >
-					 	            <td rowspan='5'>
-					 	            <img style="margin-right:10px;" src='internal/images/faculty_photos/120x120/adsul.jpg' width='125' height='130'>
+					 	            <td rowspan='6' style="width:200px;">
+					 	            <img class="img-fluid" style="margin:15px;" src='{{person.image.url}}' width='125' height='130'>
 					 	            </td>
 					 	          </tr>
 
 										<tr>
-											<p><td><a href=''><h3>A M Siva Krishna</h3></a></td></p>
+											<td><a href=''><h3>{{person.name}}</h3></a></td>
 										</tr>
 
-										<tr>	<p><td><b> amruthk99@gmail.com</b></td></p>
+										<tr>	<p><td><b> {{person.email}}</b></td></p>
 											<td align=right></td>
 										</tr>
 
 										<tr>
 											<td colspan=3>
-												<b>Research Interests:</b> Formal methods in Concurrency, Logics and Games, Geometric Complexity Theory
+												<b>Areas of Interest:</b> {{person.areas_of_interest}}
 											</td>
 										</tr>
-										<tr><td colspan=3><b>Phone:</b> 7712</td></tr>
+										<tr><td colspan=2><b>Phone:</b> {{person.number}}</td></tr>
 
 									</table>
 
-
-									<table style="background-color:white;margin:5px;border-radius: 25px;
-										border: 2px solid lightgrey;" border=0  align=center cellspacing=0 cellpadding=2>
-															<tr >
-																<td rowspan='5'>
-																<img style="margin-right:10px;" src='internal/images/faculty_photos/120x120/adsul.jpg' width='125' height='130'>
-																</td>
-															</tr>
-
-														<tr>
-															<p><td><a href=''><h3>A M Siva Krishna</h3></a></td></p>
-														</tr>
-
-														<tr>	<p><td><b> amruthk99@gmail.com</b></td></p>
-															<td align=right></td>
-														</tr>
-
-														<tr>
-															<td colspan=3>
-																<b>Research Interests:</b> Formal methods in Concurrency, Logics and Games, Geometric Complexity Theory
-															</td>
-														</tr>
-														<tr><td colspan=3><b>Phone:</b> 7712</td></tr>
-
-													</table>
-
-														<h2 class="text-center">DEPARTMENT OF ECE</h2>
+															{% endfor %}
 
 
+<br/>
 
 
-													<table style="background-color:white;margin:5px;border-radius: 25px;
-														border: 2px solid lightgrey;" border=0  align=center cellspacing=0 cellpadding=2>
-																			<tr >
-																				<td rowspan='5'>
-																				<img style="margin-right:10px;" src='internal/images/faculty_photos/120x120/adsul.jpg' width='125' height='130'>
-																				</td>
-																			</tr>
+															<h2 class="text-center">DEPARTMENT OF ECE</h2>
 
-																		<tr>
-																			<p><td><a href=''><h3>A M Siva Krishna</h3></a></td></p>
-																		</tr>
+															{% for person in ece.all %}
+															<table style="background-color:white;margin:10px;border-radius: 25px;width:98%;">
+															 						<tr >
+															 	            <td rowspan='6' style="width:200px;">
+															 	            <img class="img-fluid" style="margin:15px;" src='{{person.image.url}}' width='125' height='130'>
+															 	            </td>
+															 	          </tr>
 
-																		<tr>	<p><td><b> amruthk99@gmail.com</b></td></p>
-																			<td align=right></td>
-																		</tr>
+																				<tr>
+																					<td><a href=''><h3>{{person.name}}</h3></a></td>
+																				</tr>
 
-																		<tr>
-																			<td colspan=3>
-																				<b>Research Interests:</b> Formal methods in Concurrency, Logics and Games, Geometric Complexity Theory
-																			</td>
-																		</tr>
-																		<tr><td colspan=3><b>Phone:</b> 7712</td></tr>
+																				<tr>	<p><td><b> {{person.email}}</b></td></p>
+																					<td align=right></td>
+																				</tr>
 
-																	</table>
+																				<tr>
+																					<td colspan=3>
+																						<b>Areas of Interest:</b> {{person.areas_of_interest}}
+																					</td>
+																				</tr>
+																				<tr><td colspan=2><b>Phone:</b> {{person.number}}</td></tr>
+
+																			</table>
+
+
+																								{% endfor %}
 
 
 
 
 
+
+
+
+
+
+
+	<br/>
+
+
+
+
+	 </div>
 	 </div>
 	<br/>
 

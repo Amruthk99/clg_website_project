@@ -11,18 +11,16 @@ class  CSE(models.Model):
     JUNIOR = 'JR'
     SENIOR = 'SR'
     YEAR_OF_JOINING_CHOICES = [
-        (FRESHMAN, 'Freshman'),
-        (SOPHOMORE, 'Sophomore'),
-        (JUNIOR, 'Junior'),
-        (SENIOR, 'Senior'),
+        ('2017', '2017'),
+        ('2018', '2018'),
+        ('2019', '2019'),
+        ('2021', '2021'),
     ]
     year_of_joining = models.CharField(
         max_length=2,
         choices=YEAR_OF_JOINING_CHOICES,
-        default=FRESHMAN,
+        default=2017,
     )
-    def is_upperclass(self):
-        return self.year_of_joining in (self.JUNIOR, self.SENIOR)
     class Meta:
         verbose_name_plural = 'CSE'
 
